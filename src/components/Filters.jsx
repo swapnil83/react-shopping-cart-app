@@ -5,6 +5,7 @@ import Rating from './Rating';
 
 const Filters = () => {
     const [rate, setRate] = useState(4);
+
     return (
         <div className='filters'>
             <span className="title">Filter Products</span>
@@ -47,7 +48,7 @@ const Filters = () => {
             <span>
                 <label style={{ paddingRight: 10 }}>Rating: </label>
                 <Rating 
-                    onClick={(i) => setRate(i)}
+                    onClick={(i) => setRate(i+1)}
                     rating={rate} 
                     style={{ cursor: 'pointer' }} 
                 />
